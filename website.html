@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Themed Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">MyPortfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Rest of your page content -->
+    
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <div class="profile-picture">
+                <img src="" alt="Profile Picture">
+            </div>
+            <h1>Hello, I'm <span id="dynamic-text"></span></h1>
+            <p>Building interactive and user-friendly websites.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="path/to/resume.pdf" class="btn secondary" download>Download Resume</a>
+            </div>
+            <a href="#projects" class="scroll-down">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Typewriter Effect
+        const options = {
+            strings: ["a Student", "a Python Enthusiast"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 1500,
+            startDelay: 1000,
+            loop: true,
+        };
+        new Typed("#dynamic-text", options);
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Section</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- About Me Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        .education-section ul {
+            list-style-type: none; /* Removes bullet points */
+            padding-left: 0; /* Removes default padding */
+            margin-left: 20px; /* Optional: Adjusts text position */
+        }
+
+        .education-section li {
+            margin-bottom: 10px; /* Space between items */
+        }
+
+        .education-section li > ul {
+            margin-left: 20px; /* Indent nested lists */
+        }
+    </style>
+</head>
+<body>
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <div class="intro-text">
+                <p>Hello! I'm <strong>Sriramsundar</strong>, a third-year B.Tech student specializing in Computer Science and Business Systems. I have a deep interest in web development and technology, and I'm always eager to explore new trends and innovations in the field.</p>
+                <p>Outside of my studies, I enjoy working on personal projects and learning new programming languages. I'm passionate about creating solutions that improve user experiences and make technology accessible and engaging.</p>
+            </div>
+            
+            <div class="education-section">
+                <h3>Education</h3>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-school"></i> <strong>Kongu Kalvi Nilayam Higher Secondary School</strong>
+                        <ul>
+                            <li>SSLC: 82%</li>
+                            <li>HSC: 85%</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-university"></i> <strong>KIT-Kalaignarkarunanidhi Institute of Technology</strong>
+                        <ul>
+                            <li>B.Tech in Computer Science and Business Systems</li>
+                            <li>CGPA: 8</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-content">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                    <div class="skill-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <p class="skill-description">Experienced in Python programming, including data analysis and web development.</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>Web Development</h3>
+                    <div class="skill-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <p class="skill-description">Proficient in HTML, CSS, and JavaScript for building interactive and responsive websites.</p>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                    <p class="skill-description">Skilled in SQL for database management and querying data efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="projects-content">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-thumbnail">
+                        <img src="images/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>This is a brief description of the first project. It highlights key features and technologies used.</p>
+                        <a href="https://example.com/project1" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-thumbnail">
+                        <img src="images/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 2</h3>
+                        <p>This is a brief description of the second project. It highlights key features and technologies used.</p>
+                        <a href="https://example.com/project2" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-thumbnail">
+                        <img src="images/project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 3</h3>
+                        <p>This is a brief description of the third project. It highlights key features and technologies used.</p>
+                        <a href="https://example.com/project3" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-thumbnail">
+                        <img src="images/project4.jpg" alt="Project 4">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 4</h3>
+                        <p>This is a brief description of the fourth project. It highlights key features and technologies used.</p>
+                        <a href="https://example.com/project4" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="certifications-content">
+            <h2>Certifications</h2>
+            <div class="certifications-list">
+                <div class="certification-item">
+                    <i class="fa-solid fa-certificate"></i>
+                    <div class="certification-info">
+                        <h3>Certification 1</h3>
+                        <p>Issued by: NoviTech R&D Private Limited</p>
+                        <p>Date:July 15th to August 13th 2024</p>
+                        <a href="D:\New port4\image" class="btn" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <i class="fa-solid fa-certificate"></i>
+                    <div class="certification-info">
+                        <h3>Certification 2</h3>
+                        <p>Issued by: Institution Name</p>
+                        <p>Date: MM/YYYY</p>
+                        <a href="D:\New port4\image" class="btn" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <i class="fa-solid fa-certificate"></i>
+                    <div class="certification-info">
+                        <h3>Certification 3</h3>
+                        <p>Issued by: Institution Name</p>
+                        <p>Date: MM/YYYY</p>
+                        <a href="https://example.com/certification3" class="btn" target="_blank">View Certificate</a>
+                    </div>
+                </div>
+                <!-- Add more certification items as needed -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Section</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h3>Follow Me</h3>
+                <a href="https://www.linkedin.com/in/sriram-sundar-440229302/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/yourprofile" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: <a href="mailto:sriram@example.com">sriram@example.com</a></p>
+                <p>Phone: <a href="tel:+919876543210">+91 7358806367</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+            <p>&copy; 2024 Sriramsundar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

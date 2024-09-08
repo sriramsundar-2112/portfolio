@@ -1,0 +1,672 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #1a1a1a;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00aaff;
+}
+
+/* Hamburger Styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    background-color: #1a1a1a; /* Fallback background color */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark overlay for better text visibility */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.profile-picture {
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #00aaff;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h1 span {
+    color: #00aaff;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-buttons {
+    margin: 20px 0;
+}
+
+.cta-buttons .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+.cta-buttons .btn.primary {
+    background-color: #00aaff;
+    color: #ffffff;
+}
+
+.cta-buttons .btn.primary:hover {
+    background-color: #0088cc;
+}
+
+.cta-buttons .btn.secondary {
+    background-color: #ffffff;
+    color: #00aaff;
+}
+
+.cta-buttons .btn.secondary:hover {
+    background-color: #f0f0f0;
+}
+
+.scroll-down {
+    display: block;
+    margin-top: 30px;
+    font-size: 2em;
+    color: #ffffff;
+    text-decoration: none;
+    animation: bounce 1.5s infinite;
+}
+
+.scroll-down i {
+    display: block;
+}
+
+/* Animation for the scroll down arrow */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+/* About Me Section Styles */
+.about-section {
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color for contrast */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff; /* Light color for the title */
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.fun-facts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.fact-box {
+    background-color: #1e1e1e; /* Dark background for the boxes */
+    border: 1px solid #333; /* Slightly lighter border for contrast */
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.fact-box i {
+    font-size: 2em;
+    color: #00aaff; /* Bright color for the icons */
+    margin-bottom: 10px;
+}
+
+.fact-box h3 {
+    margin: 0 0 10px;
+    color: #ffffff; /* Light color for the headings */
+}
+
+.fact-box p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fun-facts {
+        flex-direction: column;
+    }
+
+    .fact-box {
+        width: 100%;
+    }
+}
+/* Skills Section Styles */
+.skills-section {
+    background-color: #1e1e1e; /* Dark background color */
+    color: #e0e0e0; /* Light text color for contrast */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ffffff; /* Light color for the title */
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.skill {
+    background-color: #2c2c2c; /* Slightly lighter background for each skill */
+    border: 1px solid #333; /* Border color for visibility */
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.skill i {
+    font-size: 3em;
+    color: #00aaff; /* Bright color for the icons */
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    margin: 10px 0;
+    color: #ffffff; /* Light color for the skill name */
+}
+
+.skill-bar {
+    background-color: #333; /* Background color of the skill bar */
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.progress {
+    background-color: #00aaff; /* Color of the progress bar */
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+.skill-description {
+    color: #e0e0e0; /* Light color for the description */
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+}
+
+/* Hover Effect */
+.skill:hover .skill-description {
+    display: block; /* Show description on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 90%;
+    }
+}
+/* Featured Projects Section Styles */
+.projects-section {
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color for contrast */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ffffff; /* Light color for the title */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #1e1e1e; /* Dark background for each project item */
+    border: 1px solid #333; /* Slightly lighter border */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-thumbnail {
+    overflow: hidden;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-thumbnail img {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin: 0 0 10px;
+    color: #ffffff; /* Light color for the project title */
+}
+
+.project-info p {
+    margin: 0 0 10px;
+    color: #e0e0e0; /* Light color for the description */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00aaff; /* Bright button color */
+    color: #ffffff; /* Light text color for the button */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0077cc; /* Darker button color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on small screens */
+    }
+}
+/* Certifications Section Styles */
+.certifications-section {
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color for contrast */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.certifications-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ffffff; /* Light color for the title */
+}
+
+.certifications-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.certification-item {
+    background-color: #1e1e1e; /* Dark background for each certification item */
+    border: 1px solid #333; /* Slightly lighter border */
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.certification-item i {
+    font-size: 3em;
+    color: #00aaff; /* Color for the icons */
+    margin-bottom: 10px;
+}
+
+.certification-info h3 {
+    margin: 0 0 10px;
+    color: #ffffff; /* Light color for the certification title */
+}
+
+.certification-info p {
+    margin: 0;
+    color: #e0e0e0; /* Light color for the details */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00aaff; /* Bright button color */
+    color: #ffffff; /* Light text color for the button */
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0077cc; /* Darker button color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certifications-list {
+        flex-direction: column;
+    }
+
+    .certification-item {
+        width: 100%;
+    }
+}
+/* Contact Section Styles */
+.contact-section {
+    background-color: #1e1e1e; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff; /* Light color for the heading */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2c2c2c; /* Slightly lighter dark background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #ffffff; /* Light color for labels */
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333; /* Dark background for inputs */
+    color: #ffffff; /* Light text color */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.submit-btn {
+    background-color: #00aaff; /* Bright button color */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff; /* Light text color */
+    padding: 15px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0077cc; /* Darker button color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+    }
+}
+/* Footer Styles */
+.footer {
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.quick-links, .social-media, .contact-info {
+    flex: 1;
+    min-width: 200px;
+}
+
+.quick-links h3, .social-media h3, .contact-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff; /* Light color for headings */
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.quick-links a {
+    color: #00aaff; /* Bright color for links */
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media .social-icon {
+    font-size: 2em;
+    color: #00aaff; /* Bright color for icons */
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-media .social-icon:hover {
+    color: #0077cc; /* Darker color on hover */
+}
+
+.contact-info a {
+    color: #00aaff; /* Bright color for contact links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #e0e0e0; /* Light color for footer text */
+}
+
+.back-to-top {
+    background-color: #00aaff; /* Bright button color */
+    border: none;
+    border-radius: 50%;
+    color: #ffffff; /* Light text color */
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #0077cc; /* Darker button color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
